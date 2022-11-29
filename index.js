@@ -1,5 +1,9 @@
-module.exports = {
-  Serializer: require('./lib/serializer'),
-  Deserializer: require('./lib/deserializer'),
-  Error: require('./lib/error'),
+import serializer from "./lib/serializer";
+import deserializer from "./lib/deserializer";
+import error from "./lib/error.mjs";
+
+export default {
+  Serializer: serializer,
+  Deserializer: deserializer,
+  Error: error,
 };
